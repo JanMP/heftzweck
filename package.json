@@ -1,0 +1,19 @@
+{
+  "name": "heftzweck",
+  "private": true,
+  "scripts": {
+    "start": "meteor run"
+  },
+  "dependencies": {
+    "lodash": "^4.13.1",
+    "meteor-node-stubs": "~0.2.0",
+    "moment": "^2.13.0"
+  },
+  "version": "1.0.0",
+  "description": "a challenge for freeCodeCamp",
+  "main": "entry/main.coffee",
+  "browser": "entry/main.coffee",
+  "author": "Jan Pilgenröder",
+  "license": "MIT",
+  "devDependencies": {}
+}

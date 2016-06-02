@@ -1,0 +1,13 @@
+template(name="pinDisplay")
+  .masonry-item
+    .ui.top.attached.card
+      .ui.fluid.image
+        img($b="attr : {src : url}, ref : image, if : url")
+      .content
+        .header #{title}
+        .meta
+          span #{formattedDate}
+      .ui.bottom.attached.red.button($b="if : isOwner, click : remove")
+        i.trash.icon
+        | Delete
+      

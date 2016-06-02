@@ -1,0 +1,26 @@
+body
+  padding-top: 70px
+  background : linear-gradient(papayawhip, tan) fixed
+
+.masonry
+  width : 95%
+  margin : auto
+  column-gap: 1em
+  @media only screen and (max-width : 400px)
+    column-count : 1
+  @media only screen and (min-width : 400px)
+    column-count : 2
+  @media only screen and (min-width : 700px)
+    column-count : 3
+  @media only screen and (min-width : 1000px)
+    column-count : 4
+  @media only screen and (min-width : 1300px)
+    column-count : 5
+  @media only screen and (min-width : 1600px)
+    column-count : 6
+
+.masonry-item
+  display: inline-block
+  width : 100%
+  margin-bottom: 1.5em
+  margin-top: 1px

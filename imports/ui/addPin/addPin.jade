@@ -1,0 +1,16 @@
+template(name="addPin")
+  .ui.text.clearing.container.segment
+    h2.header add a pin
+    .ui.clearing.form
+      .ui.field
+        label Image URL
+        input(type="text", placeholder="paste an image url from another website" $b="value : url, throttle : 400")
+      .ui.field
+        label Title
+        input(type="text", placeholder="enter a short descriptive title" $b="value : title, throttle : 400")
+      button.ui.right.floated.button($b="enable : valid, click : submit") Submit
+  
+  .ui.text.container($b="if : anyValid")
+    h2.header preview:
+    with pin
+      +pinDisplay
